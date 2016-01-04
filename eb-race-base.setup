@@ -72,7 +72,7 @@
       <requirement
           name="de.raphaelgeissler.eclipseaddons.copysettings.feature.feature.group"/>
       <repository
-          url="https://github.com/rage5474/updatesites/blob/master/eclipseaddons.copysettings/0.0.1?raw=true"/>
+          url="https://github.com/rage5474/eclipseaddons.copysettings.updatesite/raw/master"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -81,7 +81,7 @@
       <requirement
           name="de.raphaelgeissler.dependencychecker.feature.feature.group"/>
       <repository
-          url="https://github.com/rage5474/updatesites/blob/master/dependencychecker/0.0.1?raw=true"/>
+          url="https://github.com/rage5474/dependencychecker.updatesite/raw/master"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
