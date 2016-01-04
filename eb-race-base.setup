@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
+    name="eb.race.base"
+    label="EB RACE BASE">
+  <stream name="master">
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="Subclipse"
+        label="Subclipse">
+      <requirement
+          name="org.tigris.subversion.subclipse.feature.group"/>
+      <requirement
+          name="org.tigris.subversion.clientadapter.feature.feature.group"/>
+      <requirement
+          name="org.tigris.subversion.clientadapter.javahl.feature.feature.group"/>
+      <requirement
+          name="org.tigris.subversion.subclipse.graph.feature.feature.group"/>
+      <requirement
+          name="org.tigris.subversion.clientadapter.svnkit.feature.feature.group"/>
+      <repository
+          url="http://subclipse.tigris.org/update_1.8.x"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="Buckminster"
+        label="Buckminster">
+      <requirement
+          name="org.eclipse.buckminster.core.feature.feature.group"/>
+      <requirement
+          name="org.eclipse.buckminster.pde.feature.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/tools/buckminster/updates-4.4"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="Xtend"
+        label="Xtend">
+      <requirement
+          name="org.eclipse.xtend.sdk.feature.group"
+          versionRange="[2.5.0,2.6.0)"/>
+      <repository
+          url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases"/>
+      <description></description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="EclEmma"
+        label="EclEmma">
+      <requirement
+          name="com.mountainminds.eclemma.feature.feature.group"/>
+      <repository
+          url="http://update.eclemma.org/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="EB RACE Addons"
+        label="EB RACE Addons">
+      <requirement
+          name="com.elektrobit.ebrace.eclipseaddons.feature.feature.group"/>
+      <repository
+          url="http://er01545p:8989/userContent/projects/eclipse-addons/update-site/snapshot/latest/repository/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="RaGe Copy Settings"
+        label="RaGe Copy Settings">
+      <requirement
+          name="de.raphaelgeissler.eclipseaddons.copysettings.feature.feature.group"/>
+      <repository
+          url="https://github.com/rage5474/updatesites/blob/master/eclipseaddons.copysettings/0.0.1?raw=true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="RaGe Dependency Checker"
+        label="RaGe Dependency Checker">
+      <requirement
+          name="de.raphaelgeissler.dependencychecker.feature.feature.group"/>
+      <repository
+          url="https://github.com/rage5474/updatesites/blob/master/dependencychecker/0.0.1?raw=true"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        name="Preferences">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id=""
+          key="/instance/org.eclipse.ui.editors/lineNumberRuler"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/refresh.enabled"
+          value="true"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.typefilter.enabled"
+          value="java.awt.*;"/>
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          key="/instance/org.eclipse.core.resources/encoding"
+          value="UTF-8"/>
+    </setupTask>
+  </stream>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+  <description>EB RACE BASE INSTALL</description>
+</setup:Project>

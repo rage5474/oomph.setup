@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:launching="http://www.eclipse.org/oomph/setup/launching/1.0"
+    xmlns:pde="http://www.eclipse.org/oomph/setup/pde/1.0"
+    xmlns:predicates="http://www.eclipse.org/oomph/predicates/1.0"
+    xmlns:projectset="http://www.eclipse.org/oomph/setup/projectset/1.0"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xmlns:setup.workingsets="http://www.eclipse.org/oomph/setup/workingsets/1.0"
+    xsi:schemaLocation="http://www.eclipse.org/oomph/setup/launching/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Launching.ecore http://www.eclipse.org/oomph/setup/pde/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/PDE.ecore http://www.eclipse.org/oomph/predicates/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/Predicates.ecore http://www.eclipse.org/oomph/setup/projectset/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/ProjectSet.ecore http://www.eclipse.org/oomph/setup/workingsets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupWorkingSets.ecore"
+    name="eb.race.source"
+    label="EB RACE SOURCE">
+  <stream name="master">
+    <setupTask
+        xsi:type="projectset:ProjectSetImportTask"
+        id="ebrace.buckminster"
+        uRL="http://er01545p:8989/userContent/ebrace-dev-full.psf"/>
+    <setupTask
+        xsi:type="setup.workingsets:WorkingSetTask">
+      <workingSet
+          name="ebrace.dev"
+          id="ebrace.dev">
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.dev.*"/>
+      </workingSet>
+      <workingSet
+          name="ebrace.core"
+          id="ebrace.core">
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.core.*"/>
+      </workingSet>
+      <workingSet
+          name="ebrace.ext"
+          id="ebrace.ext">
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.ext.*"/>
+      </workingSet>
+    </setupTask>
+    <setupTask
+        xsi:type="launching:LaunchTask"
+        id="ebrace.import-tp"
+        launcher="com.elektrobit.ebrace.buckminster/local-build/import-tp.launch"/>
+    <setupTask
+        xsi:type="pde:TargetPlatformTask"
+        id="ebrace.tp"
+        name="ebrace"/>
+    <setupTask
+        xsi:type="launching:LaunchTask"
+        id="install-lombok"
+        launcher="com.elektrobit.ebrace.buckminster/lombok/install-lombok.launch"/>
+  </stream>
+  <logicalProjectContainer
+      xsi:type="setup:ProjectCatalog"
+      href="index:/org.eclipse.setup#//@projectCatalogs[name='org.eclipse']"/>
+  <description>EB RACE SOURCE Install</description>
+</setup:Project>
