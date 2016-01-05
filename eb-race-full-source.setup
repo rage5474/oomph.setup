@@ -53,6 +53,18 @@
         xsi:type="launching:LaunchTask"
         id="install-lombok"
         launcher="com.elektrobit.ebrace.buckminster/lombok/install-lombok.launch"/>
+    <setupTask
+        xsi:type="setup:CompoundTask"
+        id="com.elektrobit.ebrace.source.preferences"
+        name="Preferences">
+      <setupTask
+          xsi:type="setup:PreferenceTask"
+          id="de.raphaelgeissler.dependencychecker.ui.builder.prefs"
+          key="/instance/de.raphaelgeissler.dependencychecker.ui.builder/checkerConfigPath"
+          value="com.elektrobit.ebrace.buckminster.oomph/config.dependencychecker">
+        <description>Sets the path to DependencyChecker model file</description>
+      </setupTask>
+    </setupTask>
   </stream>
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"

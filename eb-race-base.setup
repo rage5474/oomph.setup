@@ -103,13 +103,6 @@
           xsi:type="setup:PreferenceTask"
           key="/instance/org.eclipse.core.resources/encoding"
           value="UTF-8"/>
-      <setupTask
-          xsi:type="setup:PreferenceTask"
-          id="de.raphaelgeissler.dependencychecker.ui.builder.prefs"
-          key="/instance/de.raphaelgeissler.dependencychecker.ui.builder/checkerConfigPath"
-          value="com.elektrobit.ebrace.buckminster.oomph/config.dependencychecker">
-        <description>Sets the path to DependencyChecker model file</description>
-      </setupTask>
     </setupTask>
   </stream>
   <logicalProjectContainer
