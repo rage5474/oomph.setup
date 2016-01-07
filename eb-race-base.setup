@@ -88,7 +88,7 @@
         id="SWT Examples"
         label="SWT Examples">
       <requirement
-          name="org.eclipse.releng.testsIU"/>
+          name="org.eclipse.sdk.examples.source.feature.group"/>
       <repository
           url="http://download.eclipse.org/eclipse/updates/4.5"/>
     </setupTask>
@@ -97,7 +97,7 @@
         id="Dependency Viewer"
         label="Dependency Viewer">
       <requirement
-          name="org.mj.eclipse.reporting.classpath"/>
+          name="org.mj.eclipse.reporting.classpath.feature.group"/>
       <repository
           url="http://epdv.googlecode.com/svn/trunk/UpdateSite"/>
     </setupTask>
@@ -106,9 +106,18 @@
         id="Explorer Plugin"
         label="Explorer Plugin">
       <requirement
-          name="de.bastiankrol.startexplorer.feature"/>
+          name="de.bastiankrol.startexplorer.feature.feature.group"/>
       <repository
-          url="http://basti1302.github.com/startexplorer/update"/>
+          url="https://basti1302.github.com/startexplorer/update"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="TargetPlatform DSL Editor"
+        label="TargetPlatform DSL Editor">
+      <requirement
+          name="fr.obeo.releng.targetplatform-feature.feature.group"/>
+      <repository
+          url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/latest/"/>
     </setupTask>
     <setupTask
         xsi:type="setup:CompoundTask"
