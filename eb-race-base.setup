@@ -111,15 +111,6 @@
           url="https://basti1302.github.com/startexplorer/update"/>
     </setupTask>
     <setupTask
-        xsi:type="setup.p2:P2Task"
-        id="TargetPlatform DSL Editor"
-        label="TargetPlatform DSL Editor">
-      <requirement
-          name="fr.obeo.releng.targetplatform-feature.feature.group"/>
-      <repository
-          url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/latest/"/>
-    </setupTask>
-    <setupTask
         xsi:type="setup:CompoundTask"
         name="Preferences">
       <setupTask
