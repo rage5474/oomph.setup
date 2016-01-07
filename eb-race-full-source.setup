@@ -37,60 +37,54 @@
           name="ebrace.ext"
           id="ebrace.ext">
         <predicate
-            xsi:type="predicates:OrPredicate">
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="com.elektrobit.ebrace.ext.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="com.google.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="nl.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="de.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="org.*"/>
-        </predicate>
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.ext.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.google.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="nl.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="de.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="org.*"/>
       </workingSet>
       <workingSet
           name="ebrace.ui.console"
           id="ebrace.ui.console">
         <predicate
             xsi:type="predicates:NamePredicate"
-            pattern="com.elektrobit.ebrace.ebrace.ui.console.*"/>
+            pattern="com.elektrobit.ebrace.ui.console.*"/>
       </workingSet>
       <workingSet
           name="ebrace.ui.ecl"
           id="ebrace.ui.ecl">
         <predicate
             xsi:type="predicates:NamePredicate"
-            pattern="com.elektrobit.ebrace.ebrace.ui.ecl.*"/>
+            pattern="com.elektrobit.ebrace.ui.ecl.*"/>
       </workingSet>
       <workingSet
           name="ebrace.targetdata"
           id="ebrace.ui.ecl">
         <predicate
-            xsi:type="predicates:OrPredicate">
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="com.elektrobit.ebrace.ebrace.targetdata.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="com.elektrobit.ebrace.ebrace.targetadapter.*"/>
-          <operand
-              xsi:type="predicates:NamePredicate"
-              pattern="com.elektrobit.ebrace.ebrace.genivi.targetadapter.*"/>
-        </predicate>
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.targetdata.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.targetadapter.*"/>
+        <predicate
+            xsi:type="predicates:NamePredicate"
+            pattern="com.elektrobit.ebrace.genivi.targetadapter.*"/>
       </workingSet>
       <workingSet
           name="ebrace.common"
           id="ebrace.common">
         <predicate
             xsi:type="predicates:NamePredicate"
-            pattern="com.elektrobit.ebrace.ebrace.common.*"/>
+            pattern="com.elektrobit.ebrace.common.*"/>
       </workingSet>
     </setupTask>
     <setupTask
