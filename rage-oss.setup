@@ -46,7 +46,7 @@
     <setupTask
         xsi:type="setup.p2:P2Task"
         id="m2e"
-        label="Changes this to m2e">
+        label="m2e">
       <requirement
           name="org.eclipse.m2e.feature.feature.group"/>
       <requirement
@@ -73,6 +73,15 @@
           name="fr.obeo.releng.targetplatform-feature.feature.group"/>
       <repository
           url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/latest/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="xtext.sdk"
+        label="xtext.sdk">
+      <requirement
+          name="org.eclipse.xtext.sdk"/>
+      <repository
+          url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
     </setupTask>
   </stream>
   <logicalProjectContainer
