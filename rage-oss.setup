@@ -79,7 +79,7 @@
         id="xtext.sdk"
         label="xtext.sdk">
       <requirement
-          name="org.eclipse.xtext.sdk"/>
+          name="org.eclipse.xtext.sdk.feature.group"/>
       <repository
           url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
     </setupTask>
