@@ -83,6 +83,15 @@
       <repository
           url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
     </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
+        id="EMF"
+        label="EMF">
+      <requirement
+          name="org.eclipse.emf.ecoretools.sdk.feature.group"/>
+      <repository
+          url="http://download.eclipse.org/releases/mars"/>
+    </setupTask>
   </stream>
   <logicalProjectContainer
       xsi:type="setup:ProjectCatalog"
