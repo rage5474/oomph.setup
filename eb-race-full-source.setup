@@ -16,7 +16,8 @@
     <setupTask
         xsi:type="projectset:ProjectSetImportTask"
         id="ebrace.buckminster"
-        uRL="http://er01545p:8989/userContent/ebrace-dev-full.psf"/>
+        uRL="http://er01545p:8989/userContent/ebrace-dev-full.psf"
+		excludedTriggers="STARTUP"/>
     <setupTask
         xsi:type="setup.workingsets:WorkingSetTask">
       <workingSet
@@ -90,7 +91,8 @@
     <setupTask
         xsi:type="launching:LaunchTask"
         id="ebrace.import-tp"
-        launcher="com.elektrobit.ebrace.buckminster/local-build/import-tp.launch"/>
+        launcher="com.elektrobit.ebrace.buckminster/local-build/import-tp.launch"
+		excludedTriggers="STARTUP"/>
     <setupTask
         xsi:type="pde:TargetPlatformTask"
         id="ebrace.tp"
@@ -98,7 +100,8 @@
     <setupTask
         xsi:type="launching:LaunchTask"
         id="install-lombok"
-        launcher="com.elektrobit.ebrace.buckminster/lombok/install-lombok.launch"/>
+        launcher="com.elektrobit.ebrace.buckminster/lombok/install-lombok.launch"
+		excludedTriggers="STARTUP"/>
     <setupTask
         xsi:type="setup:CompoundTask"
         id="com.elektrobit.ebrace.source.preferences"
