@@ -42,7 +42,7 @@
         label="Xtend">
       <requirement
           name="org.eclipse.xtend.sdk.feature.group"
-          versionRange="[2.5.0,2.6.0)"/>
+          versionRange="[2.9.0,3.0.0)"/>
       <repository
           url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases"/>
       <description></description>
@@ -76,12 +76,21 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
+        id="RaGe CDSL"
+        label="RaGe CDSL">
+      <requirement
+          name="de.ragedev.cdsl.feature.feature.group"/>
+      <repository
+          url="http://dval.ragedev.de/dval/snapshots/latest/update-site/"/>
+    </setupTask>
+    <setupTask
+        xsi:type="setup.p2:P2Task"
         id="RaGe Dependency Checker"
         label="RaGe Dependency Checker">
       <requirement
           name="de.raphaelgeissler.dependencychecker.feature.feature.group"/>
       <repository
-          url="https://github.com/rage5474/dependencychecker.updatesite/raw/master"/>
+          url="http://dval.ragedev.de/dval/snapshots/latest/update-site/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -92,7 +101,7 @@
       <repository
           url="http://download.eclipse.org/eclipse/updates/4.5"/>
     </setupTask>
-    <setupTask
+    <!-- setupTask
         xsi:type="setup.p2:P2Task"
         id="Dependency Viewer"
         label="Dependency Viewer">
@@ -100,7 +109,7 @@
           name="org.mj.eclipse.reporting.classpath.feature.group"/>
       <repository
           url="http://epdv.googlecode.com/svn/trunk/UpdateSite"/>
-    </setupTask>
+    </setupTask -->
     <setupTask
         xsi:type="setup.p2:P2Task"
         id="Explorer Plugin"
