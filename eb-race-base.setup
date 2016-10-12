@@ -81,7 +81,7 @@
       <requirement
           name="de.ragedev.cdsl.feature.feature.group"/>
       <repository
-          url="http://dval.ragedev.de/dval/snapshots/latest/update-site/"/>
+          url="http://dval.updatesite.ragedev.de"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
@@ -90,7 +90,7 @@
       <requirement
           name="de.raphaelgeissler.dependencychecker.feature.feature.group"/>
       <repository
-          url="http://dval.ragedev.de/dval/snapshots/latest/update-site/"/>
+          url="http://dval.updatesite.ragedev.de"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
