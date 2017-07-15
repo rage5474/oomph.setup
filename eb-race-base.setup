@@ -49,15 +49,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
-        id="EclEmma"
-        label="EclEmma">
-      <requirement
-          name="com.mountainminds.eclemma.feature.feature.group"/>
-      <repository
-          url="http://update.eclemma.org/"/>
-    </setupTask>
-    <setupTask
-        xsi:type="setup.p2:P2Task"
         id="EB RACE Addons"
         label="EB RACE Addons">
       <requirement
