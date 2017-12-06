@@ -23,7 +23,7 @@
       <requirement
           name="org.tigris.subversion.clientadapter.svnkit.feature.feature.group"/>
       <repository
-          url="http://subclipse.tigris.org/update_1.12.x"/>
+          url="https://dl.bintray.com/subclipse/archive/release/1.12.x/"/>
     </setupTask>
     <setupTask
         xsi:type="setup.p2:P2Task"
